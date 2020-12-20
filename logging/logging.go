@@ -1,8 +1,8 @@
 package logging
-import {
+import (
 	"fmt"
 	"time"
-}
+)
 
 
 var debug bool
