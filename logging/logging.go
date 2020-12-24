@@ -1,9 +1,10 @@
 package logging
-import (
-	"fmt"
-	"time"
-)
 
+import (
+   "fmt"
+    "time"
+    "runtime"
+)
 
 var debug bool
 
@@ -17,5 +18,7 @@ func Log(statement string) {
     }
 
     fmt.Printf("%s %s\n", time.Now().Format(time.RFC3339), statement)
+    fmt.Println(runtime.Caller(0))
 }
+
  
